@@ -2,7 +2,6 @@ const colors = require("colors");
 const fs = require("fs");
 const path = require("path");
 const contactsPath = path.join(__dirname, "./db/contacts.json");
-const { nanoid } = require("nanoid");
 
 function getContacts() {
   const contacts = fs.readFileSync(contactsPath, "utf8");
@@ -49,11 +48,12 @@ function removeContact(contactId) {
 
 function addContact(name, email, phone) {
   const contact = {
-    id: nanoid(),
+    id: Date.now(),
     name,
     email,
     phone,
   };
+
   fs.readFile(contactsPath, "utf8", (err, contacts) => {
     if (err) {
       console.log(err);

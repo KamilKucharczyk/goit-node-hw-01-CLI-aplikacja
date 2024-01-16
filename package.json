@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "colors": "^1.4.0",
-    "commander": "^11.1.0",
-    "nanoid": "^2.1.11"
+    "commander": "^11.1.0"
   }
 }
