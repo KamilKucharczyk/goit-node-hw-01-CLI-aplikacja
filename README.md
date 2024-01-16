@@ -6,19 +6,19 @@ The application for which allow to manage your list of contacts.
 
 ### Display the contact list
 
-https://monosnap.com/file/o15V5bNyW6UoSV1DbLYtvFKVQ3bF4a
+![Contact list](./images/listContacts.png)
 
 ### Fetch contact
 
-https://monosnap.com/file/Ve7kvGw31wR44v5okEwjOwxIAlovHL
+![Get by Id](./images/getById.png)
 
 ### Add contact
 
-https://monosnap.com/file/SeDvv9JANvnUpnlrjMcvEpgkZTWtTB
+![Add contact](./images/addContact.png)
 
 ### Remove contact
 
-https://monosnap.com/file/isl67oiFtRSccOf42JbLPJTE9nXvS0
+![Remove contact](./images/removeContact.png)
 
 ## Usage
 
