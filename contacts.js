@@ -1,7 +1,7 @@
 import colors from "colors";
 import fs from "fs";
 import path from "path";
-const contactsPath = path.join(process.cwd, "/db/contacts.json");
+const contactsPath = path.join(process.cwd(), "/db/contacts.json");
 
 function getContacts() {
   const contacts = fs.readFileSync(contactsPath, "utf8");
