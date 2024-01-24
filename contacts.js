@@ -1,7 +1,7 @@
-const colors = require("colors");
-const fs = require("fs");
-const path = require("path");
-const contactsPath = path.join(__dirname, "./db/contacts.json");
+import colors from "colors";
+import fs from "fs";
+import path from "path";
+const contactsPath = path.join(process.cwd, "/routes/api/db/contacts.json");
 
 function getContacts() {
   const contacts = fs.readFileSync(contactsPath, "utf8");
@@ -75,10 +75,4 @@ function addContact(name, email, phone) {
   });
 }
 
-module.exports = {
-  getContacts,
-  listContacts,
-  getContactById,
-  removeContact,
-  addContact,
-};
+export { getContacts, listContacts, getContactById, removeContact, addContact };
